@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* ----- Grundstil för webbsidan ----- */
+
+html {
+    font-size: 16px;
+}
+
+html, body, nav, header, main, aside, footer, article, section, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1d5b7;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2, h3 {
+    background-color: #e6b077;
+    margin: 0;
+    padding: 8px;
+}
+
+/* ----- Stil för formuläret ----- */
+
+#booking {
+    padding: 20px;
+}
+
+#booking fieldset {
+    background-color: #fed;
+    margin-bottom: 20px;
+}
+
+#booking fieldset div {
+    display: grid;
+    gap: 0.6em;
+    white-space: nowrap;
+}
+
+#booking legend {
+    font-weight: bold;
+}
+
+#date div {
+    grid-template-columns: 1fr 1fr;
+}
+
+#customer div {
+    grid-template-columns: min-content auto;
+}
+
+#customer input {
+    width: 40ch;
+}
+
+#customer #zipcode {
+    width: 6ch;
+}
+
+#send {
+    text-align: right;
+}
+
+#send input {
+    font-size: 1.5em;
+    border-radius: 0.6em;
+    background-color: #7BE;
+}
+
+#send input:hover {
+    background-color: #e6b077;
+}
